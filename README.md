@@ -1,68 +1,261 @@
-# Getting Started with Create React App
+# ✨ GlowSpark – MERN Stack E-Commerce Website
 
-## Available Scripts
+GlowSpark is a modern **full-stack e-commerce platform** built using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)**. It provides a seamless cosmetics shopping experience with secure authentication, product management, shopping cart functionality, and an intuitive admin dashboard.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 👤 User Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* User Registration & Login
+* Secure JWT Authentication
+* Browse Products by Category
+* Product Search & Filtering
+* Product Details Page
+* Add to Cart
+* Update Cart Quantity
+* Wishlist Support
+* Checkout Process
+* Order History
+* User Profile Management
+* Responsive Design for Mobile & Desktop
 
-### `npm test`
+### 🛒 Admin Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Admin Dashboard
+* Add New Products
+* Update Products
+* Delete Products
+* Manage Categories
+* View Customer Orders
+* Manage Users
+* Dashboard Analytics
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React.js
+* React Router
+* Axios
+* Context API / Redux (if used)
+* Bootstrap / Tailwind CSS
+* HTML5
+* CSS3
+* JavaScript (ES6+)
 
-### `npm run eject`
+### Backend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+* bcrypt.js
+* Multer (Image Upload)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Database
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* MongoDB Atlas / MongoDB
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Tools
 
-## Learn More
+* Git
+* GitHub
+* VS Code
+* Postman
+* npm
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 Project Structure
 
-### Code Splitting
+```
+GlowSpark/
+│
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── context/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── assets/
+│   │   └── App.js
+│
+├── server/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── uploads/
+│   └── server.js
+│
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## ⚙️ Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Clone the Repository
 
-### Making a Progressive Web App
+```bash
+git clone https://github.com/your-username/glowspark.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+cd glowspark
+```
 
-### Advanced Configuration
+### Install Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Frontend
 
-### Deployment
+```bash
+cd client
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Backend
 
-### `npm run build` fails to minify
+```bash
+cd ../server
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## ▶️ Run the Application
+
+### Start Backend
+
+```bash
+npm run server
+```
+
+### Start Frontend
+
+```bash
+npm start
+```
+
+The application will be available at:
+
+```
+http://localhost:3000
+```
+
+Backend API:
+
+```
+http://localhost:5000
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file inside the **server** folder.
+
+```env
+PORT=5000
+
+MONGODB_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_secret_key
+
+CLIENT_URL=http://localhost:3000
+```
+
+---
+
+## 📸 Screenshots
+
+Add screenshots here:
+
+* Home Page
+* Product Listing
+* Product Details
+* Shopping Cart
+* Checkout
+* Login Page
+* Admin Dashboard
+
+Example:
+
+```
+screenshots/
+├── home.png
+├── products.png
+├── cart.png
+├── checkout.png
+└── admin-dashboard.png
+```
+
+---
+
+## 🔮 Future Improvements
+
+* Online Payment Integration (Stripe/Razorpay)
+* Product Reviews & Ratings
+* Coupon & Discount System
+* Email Notifications
+* Order Tracking
+* Dark Mode
+* AI-Based Product Recommendations
+* Progressive Web App (PWA)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to your branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Agrim Tiwari**
+
+**MERN Stack Developer**
+
+Passionate about building scalable, user-friendly, and high-performance web applications using modern web technologies.
+
+---
+
+### ⭐ If you like this project, don't forget to give it a Star!
+
